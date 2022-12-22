@@ -1,0 +1,47 @@
+
+html body {
+    background-color: rgba(0,0,0,1.00);
+    cursor: none;
+}
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+.modebar {
+  display: none !important;
+  } 
+
+.banner {
+  height: 100px;
+}
+
+.cal-item{
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.main{
+  width: 1280px !important;
+  height: 1004px !important;
+}
+
+.weather{
+  padding: 0px !important;
+  margin-bottom: 5px;
+}
+
+.temp{
+  font-size: 12px !important;
+  padding-top: 5px;
+}
+
+.scrolling {
+  display: inline-block !important;
+  margin-top: 80px !important;
+}
+

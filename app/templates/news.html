@@ -1,0 +1,45 @@
+
+{% for News in news %}
+<div class="container" id="news-{{ loop.index }}">
+    <div class="row">
+        <div class = "col">
+            <div><h5>News</h5></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col">
+            <div><p class="text-justify font-weight-bold" style="font-size: 16px;">{{ News.title }}</p></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col">
+            <div>
+                <p class="text-justify font-weight-bold" style="font-size: 14px;">{{ News.summary }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col">
+            <div>
+                {{ News.image | safe }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<script type="text/javascript">
+    var divs = $('div[id^="news-"]').hide(),
+    i = 0;
+
+    (function cycle() { 
+
+        divs.eq(i).fadeIn(400)
+                .delay(1000*60)
+                .fadeOut(400, cycle);
+
+        i = ++i % divs.length;
+
+    })();
+    
+    </script>

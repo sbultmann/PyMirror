@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class = "col">
+            <div class="chart" id="temp_graph">
+                
+                    <script>
+                        var graphs = {{ plot | safe }} ;
+                        Plotly.plot('temp_graph',graphs,{});
+                    </script>
+                
+            </div>
+        </div>
+    </div>
+</div>

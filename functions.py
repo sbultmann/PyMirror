@@ -11,6 +11,11 @@ def env_data():
 
     df = pd.DataFrame(json.loads(ch.get({'results': 24*60*60/30*3}))['feeds'])
     df.columns = ['time','entry_id','temperature', 'humidity', 'pressure']
+    df = df.dropna()
+    df = df[df["humidity"].str.contains("nan") == False]
+    df = df[df["temperature"].str.contains("nan") == False]
+    df = df[df["pressure"].str.contains("nan") == False]
+
     df['time'] = pd.to_datetime(df['time'])
 
     df['temperature'] = pd.to_numeric(df['temperature'])

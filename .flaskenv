@@ -1,1 +1,2 @@
 FLASK_APP=PyMirror.py
+FLASK_DEBUG=1

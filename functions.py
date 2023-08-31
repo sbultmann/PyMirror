@@ -158,9 +158,10 @@ def news():
                 {
                 "title": entry.title,
                 "summary": entry['summary'],
-                "image" : html.find_all('img')[0]
+                "image" : str(html.find_all('img')[0]).split('src="')[1].split('"/>')[0]
                 }
             )
+            
         except:
             result.append(
                 {

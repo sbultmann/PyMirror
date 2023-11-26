@@ -44,7 +44,7 @@ def env_data():
     trace2 = go.Scatter(
         x=df['time'],
         y=df['humidity'],
-        name = "Humidity",
+        name = "Wind Speed",
         marker_color = 'white',
         marker_line_width=8,
         )

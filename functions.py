@@ -9,7 +9,7 @@ def env_data():
 
     ch = thingspeak.Channel(1880870)
 
-    df = pd.DataFrame(json.loads(ch.get({'results': 24*60*60/30*3}))['feeds'])
+    df = pd.DataFrame(json.loads(ch.get({'results': 960}))['feeds'])
     df.columns = ['time','entry_id','temperature', 'humidity', 'pressure']
     df = df.dropna()
     df = df[df["humidity"].str.contains("nan") == False]

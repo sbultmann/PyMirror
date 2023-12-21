@@ -171,3 +171,14 @@ def news():
                 }
             )
     return(result)
+
+
+def get_calender_events():
+    from icalevents.icalevents import events
+    es  = events("webcal://p47-caldav.icloud.com/published/2/MTM3NjQ0NzQ3NzEzNzY0NPhMylKQ5mxjDqnw9HY4TODV7af0rJSnGNkZtOA_lPUBithZQ8lU6DwuCLdRq7pHz41Tz2rZTnm3QJiQRSUaLGM", fix_apple=True)
+    return es
+
+if __name__ == "__main__":
+    es = get_calender_events()
+    for e in es:
+        print(e.summary)

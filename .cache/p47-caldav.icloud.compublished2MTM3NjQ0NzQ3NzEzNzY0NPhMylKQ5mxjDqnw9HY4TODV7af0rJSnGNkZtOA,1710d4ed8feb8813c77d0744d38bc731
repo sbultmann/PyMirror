@@ -1,0 +1,17 @@
+status: 301
+server: AppleHttpServer/78689afb4479
+date: Wed, 20 Dec 2023 12:44:56 GMT
+content-type: text/html
+content-length: 185
+connection: keep-alive
+location: https://p47-caldav.icloud.com/published/2/MTM3NjQ0NzQ3NzEzNzY0NPhMylKQ5mxjDqnw9HY4TODV7af0rJSnGNkZtOA_lPUBithZQ8lU6DwuCLdRq7pHz41Tz2rZTnm3QJiQRSUaLGM
+-x-permanent-redirect-url: https://p47-caldav.icloud.com/published/2/MTM3NjQ0NzQ3NzEzNzY0NPhMylKQ5mxjDqnw9HY4TODV7af0rJSnGNkZtOA_lPUBithZQ8lU6DwuCLdRq7pHz41Tz2rZTnm3QJiQRSUaLGM
+content-location: http://p47-caldav.icloud.com/published/2/MTM3NjQ0NzQ3NzEzNzY0NPhMylKQ5mxjDqnw9HY4TODV7af0rJSnGNkZtOA_lPUBithZQ8lU6DwuCLdRq7pHz41Tz2rZTnm3QJiQRSUaLGM
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>AppleHttpServer/78689afb4479</center>
+</body>
+</html>
